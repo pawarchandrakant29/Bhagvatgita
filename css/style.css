@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.instruction, .book {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  min-width: 900px;
+  min-height: 700px;
+  background: #1f1f1e;
+  position: relative;
+}
+.book {
+  width: 847px;
+  height: 654.5px;
+  transform: translate(-50%, -50%) rotatex(10deg) rotatey(-10deg);
+  transform-style: preserve-3d;
+}
+
+.page {
+  width: 423.5px;
+  height: 654.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 1s;
+}
+
+.page:nth-child(1) {
+  padding: 5% 4% 4% 5%;
+  transform-origin: 0% 50%;
+  transform: translatez(-1px);
+  background: #9B6921;
+}
+
+.left-side:nth-child(1) {
+  transform: translatez(1px) rotatey(-180deg);
+}
+
+.page:nth-child(2) {
+  padding: 3% 5% 4% 4%;
+  transform-origin: 100% 50%;
+  transform: translatez(-2px) scalex(-1) translatex(100%);
+  background: #9B6921;
+}
+
+.left-side:nth-child(2) {
+  transform: translatez(2px) scalex(-1) translatex(100%) rotatey(180deg);
+}
+
+.page:nth-child(3) {
+  padding: 5% 4% 4% 5%;
+  transform-origin: 0% 50%;
+  transform: translatez(-3px);
+  background: rgb(234,205,155);
+}
+
+.left-side:nth-child(3) {
+  transform: translatez(3px) rotatey(-180deg);
+}
+
+.page:nth-child(4) {
+  padding: 5% 5% 4% 4%;
+  transform-origin: 100% 50%;
+  transform: translatez(-4px) scalex(-1) translatex(100%);
+  background: rgb(234,205,155);
+}
+
+.left-side:nth-child(4) {
+  transform: translatez(4px) scalex(-1) translatex(100%) rotatey(180deg);
+}
+
+.page:nth-child(5) {
+  padding: 5% 4% 4% 5%;
+  transform-origin: 0% 50%;
+  transform: translatez(-5px);
+  background: rgb(234,205,155);
+}
+
+.left-side:nth-child(5) {
+  transform: translatez(5px) rotatey(-180deg);
+}
+
+.page:nth-child(6) {
+  padding: 5% 5% 4% 4%;
+  transform-origin: 100% 50%;
+  transform: translatez(-6px) scalex(-1) translatex(100%);
+  background: rgb(234,205,155);
+}
+
+.left-side:nth-child(6) {
+  transform: translatez(6px) scalex(-1) translatex(100%) rotatey(180deg);
+}
+
+.page:nth-child(7) {
+  padding: 5% 4% 4% 5%;
+  transform-origin: 0% 50%;
+  transform: translatez(-7px);
+  background: rgb(234,205,155);
+}
+
+.left-side:nth-child(7) {
+  transform: translatez(7px) rotatey(-180deg);
+}
+.cover-front:nth-child(1) {
+  text-align: center;
+}
+.cover-front:nth-child(1) h1 {
+  font-family: "Lora", serif;
+  font-size: 45px;
+  color: #000000;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.cover-front:nth-child(1) h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 24px;
+  color: #000305;
+  position: relative;
+  top: 40%;
+}
+.cover-front:nth-child(1) .hat {
+  font-size: 100px;
+  color: #000000;
+  position: relative;
+  top: 3%;
+}
+
+p {
+  margin-bottom: 5%;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  overflow: hidden;
+  margin-top: 4%;
+}
+h4{
+  margin-bottom: 5%;
+  font-size: 30px;
+  text-align: center;
+  color: #ef4908;
+}
+h1 ,h6{
+  margin-bottom: 5%;
+  font-size: 18px;
+  text-align: center;
+  color: #ef4908;
+}  
+
+.page:nth-child(3) p:first-of-type:first-letter {
+  font-size: 32px;
+}
+
+.instruction {
+  left: calc(50% - 150px);
+  font-size: 26px;
+  color: #0009;
+  background: #fff7;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+.image img{
+     width: 325px;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.image{
+    border: 11px solid white;
+}
+img{
+    width: 338px;
+    height: 568px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+ text-transform: capitalize;
+ color:#f5930a ;
+ display: flex;
+ justify-content: center;
+}
+.ch-button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 90px;
+}
+.btn1, .btn2, .btn3, .btn4 ,.btn5 , .btn6 ,.btn7 ,.btn8 ,.btn9 ,.btn10 ,.btn11 ,.btn12 ,.btn13 ,.btn14 ,.btn15 ,.btn16 ,.btn17 ,.btn18{
+    background-color: #11f756ad;
+    border-radius: 50px;
+    color: #ed0c0c;
+    padding: 8px;
+    margin: 10px;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient( #ef0505b9);
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="%239b6821"><polygon points="0,0 10,0 5,10" /></svg>');
+  background-position: center;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  display: none;  
+}
+.scroll-bar {
+  overflow-y: scroll;
+  height: 100%;
+}
+.scroll-bar-x {
+  overflow-x: scroll;
+  width: 100%;
+}
+.zindex{
+  z-index: 1;
+}
+.zbtn{
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+}
+.po-ab{
+  width: 423.5px;
+  height: 654.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
